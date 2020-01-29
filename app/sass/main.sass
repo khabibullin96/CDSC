@@ -1,0 +1,123 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	font-size: 16px
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	padding: 5%
+
+.tabs
+	position: relative
+	padding: 0
+
+.tab, .tab-title
+	display: inline-block
+
+.tab
+	input[type=radio]
+		display: none
+
+.tab-title 
+	background: #ededed
+	padding: 10px
+	width: 200px
+	text-align: center
+	border-radius: 3px
+	color: $accent
+	font-weight: bold
+	margin-right: 10px
+
+.tab-content 
+	position: absolute
+	left: 0
+	display: none
+	width: 100%
+	
+		
+
+.tab_group
+	button
+		margin-right: 15px
+
+			
+.tab 
+	& :checked ~ .tab-content 
+		display: block 
+
+.tab
+	& :checked + .tab-title 
+		position: relative
+		background: $accent
+		z-index: 1
+		color: #fff
+		
+
+
+::-webkit-scrollbar 
+	width: 7px
+::-webkit-scrollbar:horizontal
+	height: 7px
+::-webkit-scrollbar-button
+	background: #d6d6d6
+::-webkit-scrollbar-track
+	background: #d6d6d6
+::-webkit-scrollbar-track-piece 
+	background: #d6d6d6
+::-webkit-scrollbar-thumb
+	background: $accent
+
+.items_group
+	margin-top: 10px
+	margin-right: auto
+	margin-left: auto
+	padding-left: 0
+	&:last-child
+		padding: 0
+
+	input[type=search]
+		border: 1px solid #ededed
+		border-bottom: none !important
+		outline: none
+		width: 100%
+	form
+
+		height: 200px
+		border: 1px solid #ededed
+		overflow-y: auto
+		input
+			&[type='checkbox']
+				margin: 10px
+	span
+		font-weight: bold
+
+.tract, .locality, .garden, .cottage
+	margin-bottom: 0 
+
+.footer_group
+	float: right
+	button
+		margin: 20px 0 0 10px
+		width: 200px
+		text-align: center
+		outline: none
+		border: none
+		padding: 10px
+		border-radius: 3px
+		font-weight: bold
+		&:nth-child(1)
+			background: none
+			border: 1px solid #177fff
+			color: #177fff
+		&:nth-child(2)
+			color: #fff
+			background: #177fff
+
+
+
+
+
+@import "media" // Always at the end

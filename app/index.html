@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<div class="tabs container-fluid">
+		<div class="tab">
+			<input type="radio" id="tab1" name="tab-group" checked>
+			<label for="tab1" class="tab-title"><i class="fa fa-building" aria-hidden="true"></i>&nbsp; В черте города</label> 
+			<section class="tab-content">Контент</section>
+		</div> 
+		<div class="tab">
+			<input type="radio" id="tab2" name="tab-group">
+			<label for="tab2" class="tab-title"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; За городом</label> 
+			<section class="tab-content">
+				<div class="container-fluid">
+					<div class="row body_group">
+						<div class="items_group col-3">
+							<span>Тракт</span> <br>
+							<input type="search" placeholder="Поиск..." onkeyup="Tract()" id="tract"> <br>
+							<form action="#" method="#" id="main">
+								<p class="tract"><input value="123" type="checkbox"><label for="">Московский</label></p>
+								<p class="tract"><input value="1234" type="checkbox"><label for="">Червишевский</label></p>
+								<p class="tract"><input value="430" type="checkbox"><label for="">Тобольский</label></p>
+								<p class="tract"><input value="89" type="checkbox"><label for="">Салаирский</label></p>
+							</form>
+						</div>
+						<div class="items_group col-3">
+							<span>Населенный пункт</span> <br>
+							<input type="search" placeholder="Поиск..."  onkeyup="Locality()" id="locality"> <br>
+							<form action="#" method="#" name="Sum">
+								<p class="locality"><input value="123" type="checkbox"><label for="">Луговое</label></p>
+								<p class="locality"><input value="1234" type="checkbox"><label for="">Зеленые холма </label></p> 
+								<p class="locality"><input value="89" type="checkbox"><label for="">Кулаково</label></p>
+
+								<p class="locality"><input  value="7"  type="checkbox"><label for="">Червишево</label></p>
+								<p class="locality"><input value="96" type="checkbox"><label for="">Якуши</label></p>
+								<p class="locality"><input value="89" type="checkbox"><label for="">Ярд</label></p>
+							</form>
+						</div>
+						<div class="items_group col-3">
+							<span>СНТ/ДНТ</span> <br>
+							<input type="search" placeholder="Поиск..." onkeyup="Garden()" id="garden"> <br>
+							<form action="#" method="#">
+								<p class="garden"><input value="123" type="checkbox"><label for="">Элита</label></p>
+								<p class="garden"><input value="1234" type="checkbox"><label for="">Тура</label></p>
+								<p class="garden"><input value="430" type="checkbox"><label for="">Зеленый бор</label></p>
+
+								<p class="garden"><input value="12" type="checkbox"><label for="">Автомобилист</label> </p>
+								<p class="garden"><input value="598" type="checkbox"><label for="">Строитель</label> </p>
+							</form>
+						</div>
+						<div class="items_group col-3">
+							<span>Коттеджный поселок</span> <br>
+							<input type="search" placeholder="Поиск..." onkeyup="Cottage()" id="cottage"> <br>
+							<form action="#" method="#">
+								<p class="cottage"><input value="123" type="checkbox"><label for="">Калинка</label> </p>
+								<p class="cottage"><input value="1234" type="checkbox"><label for="">Зубарево хиллз</label></p>
+								<p class="cottage"><input value="430" type="checkbox"><label for="">Сосенка</label> </p>
+								<p class="cottage"><input value="89" type="checkbox"><label for="">Три сосны</label> </p>
+								<p class="cottage"><input value="9" type="checkbox"><label for="">Есенино</label> </p>
+								<p class="cottage"><input value="29" type="checkbox"><label for="">Кочубеево</label></p>
+								<p class="cottage"><input value="87" type="checkbox"><label for="">Олимпия</label> </p>
+								<p class="cottage"><input value="0" type="checkbox"><label for="">Вершины</label> </p>
+							</form>
+						</div>
+					</div>
+					<div class="row footer_group">
+						<button class="button_clear">Очистить</button>
+						<button>Применить</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="tab">
+			<input type="radio" id="tab3" name="tab-group">
+			<label for="tab3" class="tab-title"><i class="fa fa-map" aria-hidden="true"></i>&nbsp; На карте</label> 
+			<section class="tab-content">Карта</section> 
+		</div> 
+	</div>
+	<script src="js/common.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
